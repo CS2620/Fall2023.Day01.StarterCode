@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first Renderer</title>
+        <style>
+            html,body{
+                margin:0;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canv">
+
+        </canvas>
+        <script>
+            let canv = document.querySelector("#canv")
+            let ctx = canv.getContext("2d")
+            
+            ctx.fillStyle = "#FF00FF"
+            ctx.strokeStyle = "green"
+            ctx.lineWidth = 10
+            //ctx.strokeRect(0,0,100,100)
+
+            ctx.beginPath()
+            ctx.rect(0,0,100,100)
+            ctx.fill()
+            ctx.stroke()
+
+        </script>
+    </body>
+</html>
